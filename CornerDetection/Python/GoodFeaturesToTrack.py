@@ -3,12 +3,12 @@ import cv2
 from matplotlib import pyplot as plt
 
 img = cv2.imread('corner1.png')
-gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-cv2.imshow('img',img)
+cv2.imshow('img', img)
 cv2.waitKey(0)
-img=cv2.bilateralFilter(img,10,75,75)
-cv2.imshow('img_blured',img)
+img=cv2.bilateralFilter(img, 10, 75, 75)
+cv2.imshow('img_blured', img)
 cv2.waitKey(0)
 
 
